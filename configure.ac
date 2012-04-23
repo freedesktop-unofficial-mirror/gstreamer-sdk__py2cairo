@@ -66,7 +66,7 @@ AC_MSG_RESULT([$platform_win32])
 
 AM_CONDITIONAL(PLATFORM_WIN32, test "$platform_win32" = "yes")
 # Checks for header files ---
-if test "x$cross_compiling" = "xyes" -a "x$platform_win32" = "xyes" ; then
+if test "x$platform_win32" = "xyes" ; then
   # skip python cheks if cross-compiling to windows
   # $PYTHON_INCLUDES and PYTHON_LIBS should be set properly
   save_CPPFLAGS="$CPPFLAGS"
